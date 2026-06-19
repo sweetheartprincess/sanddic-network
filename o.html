@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday - Банановый праздник!</title>
+</head>
+<body background="banana.png" bgcolor="#fff8e1" text="#5d4037" link="#f57f17" vlink="#f9a825">
+    
+    <!-- Бегущая строка сверху -->
+    <marquee behavior="scroll" direction="right" bgcolor="#fff3e0" height="35">
+        <font size="5" color="#f57f17">
+            🎉🎊 С ДНЕМ РОЖДЕНИЯ МИРОСЛАВУШКА! 🎊🎉 Пусть каждый день будет сладким, как писюн Лена! 🍌 Желаю счастья, здоровья и сладостей! 🍌
+        </font>
+    </marquee>
+
+    <br>
+
+    <!-- Заголовок -->
+    <center>
+        <h1>
+            <font color="#f57f17" size="7">🍌 HAPPY BIRTHDAY! 🍌</font>
+        </h1>
+        
+        <!-- Основная таблица с картинками -->
+        <table border="0" cellpadding="20" cellspacing="0" bgcolor="#fff8e1" width="90%">
+            <tr>
+                <!-- Левая колонка с маленькими картинками -->
+                <td width="15%" valign="middle" align="center">
+                    <table border="0" cellpadding="10">
+                        <tr>
+                            <td><img src="banana1.png" alt="Банан" width="190" height="190" border="3" bordercolor="#ffd54f"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="banana2.png" alt="Банан" width="190" height="190" border="3" bordercolor="#ffd54f"></td>
+                        </tr>
+                    </table>
+                </td>
+                
+                <!-- Центральная большая картинка -->
+                <td width="70%" valign="middle" align="center" bgcolor="#fffde7">
+                    <img src="любовьморковь.jpg" alt="С днем рождения!" width="550" height="450" border="5" bordercolor="#f57f17">
+                    <br><br>
+                    
+                    <!-- ССЫЛКА ДЛЯ ОТКРЫТИЯ ФОТО НА СТРАНИЦЕ -->
+                    <a href="#foto">
+                        <h2>
+                            <font color="#f57f17" size="6">🎈НАЖМИ🎈</font>
+                        </h2>
+                    </a>
+                    
+                    <font size="4" color="#5d4037">
+                        Пусть твоя жизнь будет такой же яркой и сладкой, как банан и писюн лена! 🍌
+                    </font>
+                    <br>
+                    <font size="3" color="#8d6e63">
+                        <i>Это такое просто разьебище</i>
+                    </font>
+                    
+                    <br><br>
+                    
+                    <!-- БЛОК С ФОТО (изначально скрыт) -->
+                    <a name="foto"></a>
+                    <div id="foto_block" style="display: none; background-color: #fffde7; padding: 20px; border: 5px solid #f57f17; border-radius: 30px; width: 80%; margin: 0 auto;">
+                        <h3>
+                            <font color="#f57f17">📸 Бам! 📸</font>
+                        </h3>
+                        <img src="foto.jpg" alt="Фото" width="400" height="400" border="3" bordercolor="#ffd54f">
+                        <br><br>
+                        <a href="#foto" onclick="document.getElementById('foto_block').style.display='none'; return false;">
+                            <font color="#f57f17" size="4">✖ Закрыть фото</font>
+                        </a>
+                        <br>
+                        <font size="2" color="#8d6e63">
+                            <i>(чтобы закрыть фото нажми "Закрыть фото")</i>
+                        </font>
+                    </div>
+                    
+                </td>
+                
+                <!-- Правая колонка с маленькими картинками -->
+                <td width="15%" valign="middle" align="center">
+                    <table border="0" cellpadding="10">
+                        <tr>
+                            <td><img src="banana3.png" alt="Банан" width="190" height="190" border="3" bordercolor="#ffd54f"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="banana4.png" alt="Банан" width="190" height="190" border="3" bordercolor="#ffd54f"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- Нижняя бегущая строка -->
+        <marquee behavior="scroll" direction="left" bgcolor="#fff3e0" height="35">
+            <font size="5" color="#f57f17">
+                🍌 С ДНЕМ РОЖДЕНИЯ! 🍌 Желаю море Ленов и горы бананов! 🍌 Пусть сбудутся все мечты! 🍌
+            </font>
+        </marquee>
+
+        <br><br>
+
+        <!-- Дополнительная информация -->
+        <table border="1" bordercolor="#ffd54f" cellpadding="15" bgcolor="#fffde7" width="60%">
+            <tr>
+                <td align="center">
+                    <font size="4" color="#f57f17">
+                        <b>🍌 пожелания от Анны Эпштейновны Z 🍌</b>
+                    </font>
+                    <br><br>
+                    <font size="3" color="#5d4037">
+                        Пусть твой день будет сладким!<br>
+                        Пусть сладости не кончаются!<br>
+                        Пусть удача улыбается!<br>
+                        Пусть мечты сбываются!<br>
+                        <br>
+                        <b>С ПРАЗДНИКОМ! 🍌</b>
+                    </font>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- Нижний колонтитул -->
+        <font size="2" color="#8d6e63">
+            <hr color="#ffd54f" width="80%">
+            Мирослава Кириллова Алексеевна с др 🎈
+        </font>
+    </center>
+
+    <!-- СКРИПТ ДЛЯ ОТОБРАЖЕНИЯ ФОТО -->
+    <script>
+        // Показываем фото при клике на ссылку
+        document.querySelector('a[href="#foto"]').onclick = function(e) {
+            e.preventDefault(); // Отменяем переход по якорю
+            document.getElementById('foto_block').style.display = 'block'; // Показываем блок с фото
+            window.scrollTo({
+                top: document.getElementById('foto_block').offsetTop - 100,
+                behavior: 'smooth'
+            });
+        };
+    </script>
+
+</body>
+</html>
